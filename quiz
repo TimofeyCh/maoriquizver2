@@ -1,0 +1,89 @@
+# Defining Score variables
+print("Welcome to macleans college maori quiz. What would you like to do?")
+answer_9 = input("a) Review and study words\nb) Start quiz\n:")
+if answer_9.lower() == "a":
+    print(
+        "-------------------------------------------------------------------------------------\nSmall = iti\nSong = waiata\nLove = aroha\nChildren = tamariki\nMountain = maunga\nRiver = awa\nGift = koha\nLarge = nui\n-------------------------------------------------------------------------------------\n\nTo take the quiz, please restart the programm"
+    )
+
+else:
+    x = 0
+    score = x
+    # Question One
+    print(
+        "-------------------------------------------------------------------------------------\nWhat is aroha?"
+    )
+    answer_1 = input("a) Love\nb) Song\nc) Sky\nd) Family\n:")
+    if answer_1.lower() == "a":
+        print("\nCorrect\n")
+        x = x + 1
+    else:
+        print("\nIncorrect, the answer is Love.\n")
+
+    # Question Two
+    print("What is waiata?")
+    answer_2 = input("a) Greeting\nb) Gift\nc) Song\nd) River\n:")
+    if answer_2.lower() == "c":
+        print("\nCorrect\n")
+        x = x + 1
+    else:
+        print("\nIncorrect, The answer is Song.\n")
+
+    # Question Three
+    print("What is koha?")
+    answer_3 = input("a) Child\nb) Greeting\nc) Teacher\nd) Gift\n:")
+    if answer_3.lower() == "d":
+        print("\nCorrect\n")
+        x = x + 1
+    else:
+        print("\nIncorrect, The answer is Gift.\n")
+
+    # Question Four
+    print("What is tamariki?")
+    answer_4 = input("a) Family\nb) Greeting\nc) Children\nd) Song\n:")
+    if answer_4.lower() == "c":
+        print("\nCorrect\n")
+        x = x + 1
+    else:
+        print("\nIncorrect, The answer is Children.\n")
+
+    # Question Five
+    print("What is awa?")
+    answer_5 = input("a) Sea\nb) River\nc) Mountain\nd) Gift\n:")
+    if answer_5.lower() == "b":
+        print("\nCorrect\n")
+        x = x + 1
+    else:
+        print("\nIncorrect, The answer is River.\n")
+
+    # Question Six
+    print("What is iti?")
+    answer_6 = input("a) Large\nb) Small\nc) Round\nd) Loud\n:")
+    if answer_6.lower() == "b":
+        print("\nCorrect\n")
+        x = x + 1
+    else:
+        print("\nIncorrect, The answer is Small.\n")
+
+    # Question Seven
+    print("What is nui?")
+    answer_7 = input("a) Large\nb) Small\nc) Round\nd) Quiet\n:")
+    if answer_7.lower() == "a":
+        print("\nCorrect\n")
+        x = x + 1
+    else:
+        print("\nIncorrect, The answer is Large.\n")
+
+    # Question Eight
+    print("What is maunga?")
+    answer_8 = input("a) Mountain\nb) Sea\nc) River\nd) Path\n:")
+    if answer_8.lower() == "a":
+        print("\nCorrect\n")
+        x = x + 1
+    else:
+        print("\nIncorrect, The answer is Mountain.\n")
+
+    # Total Score
+    score = float(x / 8) * 100
+
+    print(x, "out of 8, that is", score, "%")
